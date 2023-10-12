@@ -10,14 +10,16 @@
     <audio autoplay src="./eman.mp3" type="audio/mp3" id="ses">
     </audio>
 
-    <img id="image" src="basar.jpeg" alt="">
+    <img onclick="" id="image" src="basar.jpeg" alt="">
 
     <script>
+        var ses = document.getElementById("ses");
+        var imgagee = document.getElementById("image");
+
         // Sayfa yüklendiğinde bu JavaScript kodu çalışacak
-        window.onload = function() {
-            var ses = document.getElementById("ses");
-            ses.play(); // Ses dosyasını oynat
-        };
+        imgagee.addEventListener("click", function() {
+            ses.play(); 
+        });
     </script>
 </body>
 </html>
