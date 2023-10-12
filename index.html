@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay src="./eman.mp3" type="audio/mp3" id="ses">
+    </audio>
+
+    <img id="image" src="basar.jpeg" alt="">
+
+    <script>
+        // Sayfa yüklendiğinde bu JavaScript kodu çalışacak
+        window.onload = function() {
+            var ses = document.getElementById("ses");
+            ses.play(); // Ses dosyasını oynat
+        };
+    </script>
+</body>
+</html>
